@@ -4,10 +4,10 @@ namespace Statistics {
     // define the Stats structure here. See the tests to infer its properties
     struct Stats
     {
-        float average;
-        float max;
-        float min;
+        double average;
+        double max;
+        double min;
     };
 
-    Stats ComputeStatistics(const std::vector<float>& statsData);
+    Stats ComputeStatistics(const std::vector<double>& statsData);
 }

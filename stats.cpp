@@ -1,10 +1,11 @@
 #include "stats.h"
 #include <numeric>
 #include <algorithm>
+#include "math.h"
 
 using namespace Statistics;
 
-Stats Statistics::ComputeStatistics(const std::vector<float>& rawData)
+Stats Statistics::ComputeStatistics(const std::vector<double>& rawData)
 {
     //Implement statistics here
     Stats computatedStats = {};
