@@ -1,4 +1,7 @@
 #include "stats.h"
+#include "EmailAlert.h"
+#include "LEDAlert.h"
+#include "StatsAlerter.h"
 
 #include "gtest/gtest.h"
 #include <cmath>
@@ -18,6 +21,7 @@ TEST(Statistics, AverageNaNForEmpty) {
     
     //Design the REQUIRE statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
+    EXPECT_TRUE(std::isnan(computedStats.average));
 }
 
 TEST(Alert, AlertsWhenMaxExceeds) {
